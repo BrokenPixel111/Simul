@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Lichess Simul</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Create a Lichess Simul</h2>
+        
+        <label for="simulName">Simul Name:</label>
+        <input type="text" id="simulName" placeholder="Enter Simul Name">
+
+        <label for="timeControl">Time Control:</label>
+        <select id="timeControl">
+            <option value="5+3">5+3 Blitz</option>
+            <option value="3+2">3+2 Blitz</option>
+            <option value="10+0">10+0 Rapid</option>
+        </select>
+
+        <label for="simulPassword">Simul Join Password:</label>
+        <input type="text" id="simulPassword" placeholder="Set a simple password">
+
+        <button onclick="createSimul()">Create Simul</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
